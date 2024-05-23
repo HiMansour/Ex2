@@ -1,0 +1,548 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header, nav, main, aside, section,footer, div {
+  display: block;
+}
+
+
+body{
+  margin-bottom: 287px;
+  background: #FFF;
+}
+
+#wrapper{
+  width: 100%;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+@media screen and(max-width:992px){
+  .wrapper{
+    padding: 15px;
+  } 
+}
+
+@media screen and(max-width:768px){
+  .wrapper{
+    padding: 10px;
+  } 
+}
+
+a{
+  text-decoration: none;
+}
+
+header {
+  height: 128px;
+  display: flex;
+  align-items: center;
+  padding-top: 1px;
+  padding: 0 32px;
+  background-color: rgb(255, 255, 255) ;
+}
+
+.logo {
+  background: url("../images/DonutLogo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  margin-top: 32px;
+  margin-left: 32px;
+}
+
+.Logo{
+  display: inline;
+  height: 33px;
+  margin-top: 53px;
+  color: #3E3F43;
+  font-family: Nunito;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 6px;
+}
+
+nav{
+  display: flex;
+  margin-top: 51px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  justify-content: center;
+  list-style-type: none;
+}
+
+nav a{
+  color: #612999;
+  font-family: Nunito;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 64px;
+  display: inline-block;
+}
+
+nav a:hover{
+  color: #727070;
+}
+
+nav a.active{
+  font-weight: 700;
+}
+
+.Home{
+  color: #612999;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-size: 30px;
+}
+
+#OurDonuts{
+  font-weight: 400;
+}
+
+.intro {
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 797px;
+  position: relative;
+}
+
+
+.intro h1{
+  top: 32px;
+  left: 32px;
+  width: 448px;
+  height: 120px;
+  position: absolute;
+  align-items: center;
+  color: #612999;
+  font-size: 96px;
+  font-family: Nunito;
+  font-weight: 800;
+  font-style: normal;
+  line-height: normal;
+}
+
+.intro p{
+  top: 160px;
+  left: 32px;
+  width: 448px;
+  height: 130px;
+  position: absolute;
+  color: #000;
+  font-size: 24px;
+  font-family: Nunito;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+}
+
+@media screen and(max-width: 768px){
+  .intro{
+    height: auto;
+  }
+  .intro h1{
+    font-size: 48px;
+    top: 32px;
+  }
+  .intro p{
+    font-size: 24px;
+    top: 160px;
+  } 
+}
+
+.about{
+  margin-top: 32px;
+  margin-left: 32px;
+}
+
+.about h2{
+  color: #612999;
+  width: 136.443px;
+  height: 40px;
+  font-family: Rubik;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.about p{
+  color: #000;
+  text-align: justify;
+  width: 1136px;
+  height: 85px;
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140.625%;
+  margin-bottom: 24px;
+}
+
+@media screen and(max-width: 768px){
+  .about h1{
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+  .about p{
+    font-size: 16px;
+    margin-bottom: 16px;
+  } 
+}
+
+.popular-Donuts{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 39px;
+  margin-left: 32px;
+  justify-content: flex-start;
+}
+.popular-Donuts h2{
+  display: block;
+  width: 100%;
+  height: 40px;
+  color: #612999;
+  font-family: Rubik;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 27px;
+  line-height: 40px;
+}
+
+
+.card {
+  display: flex;
+  background-color: #deccfc;
+  border-radius: 38px;
+  box-shadow: 0px 6px 40px rgba(0, 0, 0, 0.1); 
+  margin: 10px;
+  flex-wrap: wrap;
+  width: 376px;
+  height: 496px;
+  margin-right: 19px;
+  margin-bottom: 27px;
+}
+
+.card h2{ 
+  width: 100%;
+    display: block;
+    height: 40px;
+    color: #612999;
+    font-family: Gruppo;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; 
+    margin-bottom: 27px;
+}
+
+.popular-Donuts :last-child{
+  margin-bottom: 32px;
+}
+
+.card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card> img {
+  width: 376px;
+  height: 281px;
+  flex-shrink: 0;
+  border-radius: 38px;
+}
+
+.card h3{
+  color: #000;
+  font-size: 30px;
+  font-family: Abel;
+  font-style: normal;
+  font-weight: 400;
+  text-align: justify;
+  line-height: normal;
+  margin-top: 14px;
+  margin-left: 32px;
+  margin-bottom: 7px;
+  height: 35px;
+}
+
+.ParagraphGards{
+  color: #333;
+  font-family: Abel;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  width: 315px;
+  height: 64px;
+  line-height: normal;
+  flex-shrink: 0;
+  margin-bottom: 32px;
+  margin-left: 32px;
+}
+
+.Price{
+  color: #612999;
+  font-size: 35px;
+  font-family: Abel;
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
+  line-height: normal;
+  margin-bottom: 36px;
+  margin-left: 32px;
+}
+
+.Ellipseshape{
+  width: 63px;
+  height: 63px;
+  background-image: url(../images/EllipseCart1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  flex-shrink: 0;
+  margin-top: 406px;
+  margin-left: 280px;
+}
+.Heartcircle{
+  width: 47px;
+  height: 47px;
+  background-image: url(../images/EllipseHeart1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  flex-shrink: 0;
+  margin-top: 40px;
+  margin-left: 290px;
+}
+.HeartButton{
+  background-image: url(../images/heart1.jpg);
+  position: absolute;
+  width: 23px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-top: 54px;
+  margin-left: 302px;
+  fill: #f51264;
+}
+
+.CartButton{
+  width: 31px;
+  height: 31px;
+  background-image: url(../images/CartButton.png);
+  position: absolute;
+  flex-shrink: 0;
+  margin-top: 420px;
+  margin-left: 296px;
+}
+
+.PotosSection img{
+  background: url(<path-to-image)lightgray 50% / cover no-repeat;
+  height: 300px;
+  flex-shrink: 0;
+  margin-bottom: 32px;
+  margin-left: 32px;
+  border: 4px solid #E6DBFE;
+}
+
+.list-Of-Donuts{
+  margin-left: 32px;
+}
+
+.list-Of-Donuts ul{
+  list-style: none;
+}
+.list-Of-Donuts h2 {
+  width: 275px;
+  color: #612999;
+  font-family: Gruppo;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  margin-bottom: 32px;
+}
+
+.list-Of-Donuts ul li p{
+  position: absolute;
+  color: #000;
+  display: inline;
+  font-size: 24px;
+  font-family: Rubik;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 14px;
+  margin-top: 31px;
+  height: 18px;
+}
+
+.Group{
+  position: absolute;
+  display: block;
+  margin-top: 20px;
+  margin-left: 26px;
+  width: 29px;
+  height: 42.385px;
+  flex-shrink: 0;
+}
+
+.Ellipse-Page {
+  height: 82px;
+  width: 82px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.your-choice {
+  padding: 32px;
+  background-color: #FFF;
+}
+
+.your-choice h2{
+  color: #612999;
+  font-family: Rubik;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+
+.choice-photo{
+  padding: 32px;
+  background-color: #EFECFF;
+}
+
+.Choice-photo h2 {
+  color: #612999;
+  font-family: Rubik;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+
+.your-choice img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+/*Footer*/
+footer{
+  background-color: #deccfc;
+  display: flex;
+  clear: both;
+  position: fixed;
+  height: 287px;
+  width: 100%;
+  bottom: 0;
+  z-index: 1000;
+}
+
+#Footerlinkssection, #Footsociallinkssection{
+  color: #333;
+  font-size: 18px;
+  font-family: Nunito;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+#Footerlinkssection{
+  padding-left: 32px;
+  padding-top: 32px;
+  height: 122px;
+  margin-bottom: 24px;
+}
+
+#Footerlinkssection ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+#Footerlinkssection ul li{
+  height: 22px;
+  margin-bottom: 8px;
+}
+
+#Footerlinkssection a{
+  font-size: 16px;
+  font-family: Nunito;
+  font-weight: 400;
+  color: #333;
+  text-decoration: none;
+  font-style: normal;
+}
+
+#Footerlinkssection ul li:first-child{
+  margin-top: 16px;
+}
+
+#Footersociallinkssection{
+  padding-left: 150px;
+  padding-top: 32px;
+}
+
+#Footersociallinkssection ul{
+  padding: 0;
+  list-style-type: none;
+}
+
+#Footersociallinkssection ul li{
+  height: 22px;
+  margin-bottom: 8px;
+}
+
+#Footersociallinkssection ul li:first-child{
+  margin-top: 16px;
+}
+
+#Footersocialiconssection a img{
+  padding-right: 24px;
+}
+
+#Footersociallinkssection a{
+  font-size: 16px;
+  font-family: Nunitu;
+  font-weight: 400;
+  color: #333;
+  text-decoration: none;
+}
+
+#Footersocialiconssection{
+  display: block;
+  position: absolute;
+  margin-top: 182px;
+  margin-left: 32px;
+}
+
+#Footersocialiconssection p{
+  padding-top: 16px;
+  color: #333;
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 600;
+
+}
+
+#Footerlinkssection a:hover, #Footersociallinkssection a:hover{
+  color: #727070;
+}
